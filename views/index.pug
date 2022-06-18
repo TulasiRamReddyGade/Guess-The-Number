@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Guess My Number!
+        link(rel="stylesheet", href="style.css")
+    body 
+        header 
+            h1 Guess My Number! 
+            p.between Between1 and 20
+            button.btn.again Again!
+            .number ?
+        main 
+            section.left 
+                input.guess(type="number")
+                button.btn.check check!
+            section.right
+                p.message Start guessing 
+                p.label-score 💯 Score 
+                    span.score 20
+                p.label-highscore 🥇 Highscore 
+                    span.highscore 0
+        script(src="./script.js") 
